@@ -22,10 +22,16 @@ url: "https://speelvld.nl" # the base hostname & protocol for your site, e.g. ht
 # twitter_username: jekyllrb
 github_username:  sabbbi
 
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
+
 # Build settings
 markdown: kramdown
 theme: jekyll-theme-minimal
-plugins:
+plugins_dir:
   - jekyll-feed
 
 # Exclude from processing.
